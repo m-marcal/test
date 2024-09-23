@@ -24,6 +24,8 @@ jobs:
 
       - name: Try to checkout other branches
         run: |
+          git fetch origin develop
+          git fetch origin hotfix/.*
           git checkout develop
           git checkout hotfix/0.0.1
   
